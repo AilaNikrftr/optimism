@@ -1,4 +1,4 @@
-module github.com/ethereum-optimism/optimism
+module github.com/AilaNikrftr/optimism
 
 go 1.22.0
 
@@ -251,6 +251,7 @@ require (
 )
 
 replace github.com/ethereum/go-ethereum => github.com/ethereum-optimism/op-geth v1.101412.0-rc.1
+replace github.com/ethereum-optimism/optimism => github.com/AilaNikrftr/optimism v0.0.0
 
 //replace github.com/ethereum/go-ethereum => ../op-geth
 
