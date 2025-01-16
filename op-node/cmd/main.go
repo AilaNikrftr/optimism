@@ -9,7 +9,7 @@ import (
 
 	"github.com/ethereum/go-ethereum/log"
 
-	opnode "github.com/ethereum-optimism/optimism/op-node"
+		opnode "github.com/ethereum-optimism/optimism/op-node"
 	"github.com/ethereum-optimism/optimism/op-node/chaincfg"
 	"github.com/ethereum-optimism/optimism/op-node/cmd/genesis"
 	"github.com/ethereum-optimism/optimism/op-node/cmd/interop"
@@ -38,6 +38,8 @@ func main() {
 	// Set up logger with a default INFO level in case we fail to parse flags,
 	// otherwise the final critical log won't show what the parsing error was.
 	oplog.SetupDefaults()
+	
+	opnode.HelloWorld()
 
 	app := cli.NewApp()
 	app.Version = VersionWithMeta
@@ -80,6 +82,7 @@ func RollupNodeMain(ctx *cli.Context, closeApp context.CancelCauseFunc) (cliapp.
 	opservice.ValidateEnvVars(flags.EnvVarPrefix, flags.Flags, log)
 	opservice.WarnOnDeprecatedFlags(ctx, flags.DeprecatedFlags, log)
 	m := metrics.NewMetrics("default")
+	
 
 	cfg, err := opnode.NewConfig(ctx, log)
 	if err != nil {
