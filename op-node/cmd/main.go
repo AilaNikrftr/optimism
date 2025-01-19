@@ -39,7 +39,7 @@ func main() {
 	// otherwise the final critical log won't show what the parsing error was.
 	oplog.SetupDefaults()
 	
-	opnode.HelloWorld()
+	opnode.HelloMessage()
 
 	app := cli.NewApp()
 	app.Version = VersionWithMeta
