@@ -30,12 +30,6 @@ func NewLog() *Log {
     }
 }
 
-// AppendEntry appends a new log entry.
-func (l *Log) AppendEntry(entry LogEntry) {
-    l.entries = append(l.entries, entry)
-    l.nextEntryIndex++
-}
-
 // GetEntries retrieves log entries starting from a specific index.
 func (l *Log) GetEntries(startIndex int) ([]LogEntry, error) {
     if startIndex < 0 || startIndex >= len(l.entries) {
