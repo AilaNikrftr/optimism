@@ -55,5 +55,5 @@ func (l *Log) GetCommitIndex() int {
 func (l *Log) AppendEntry(entry LogEntry) {
     l.entries = append(l.entries, entry)
     l.nextEntryIndex++
-    fmt.Printf("Appended log entry: %+v\n", entry)
+    //fmt.Printf("Appended log entry: %+v\n", entry)
 }
