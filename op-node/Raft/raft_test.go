@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-
+fmt.Println("=== Starting ===")
 func TestNewNode(t *testing.T) {
 	fmt.Println("=== TEST: Initializing a Raft Node ===")
 
