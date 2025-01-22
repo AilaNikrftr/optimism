@@ -1,7 +1,6 @@
 package Log
 
 import "errors"
-import "fmt"
 //
 // The LogEntry represents a single command or data entry in the Raft log.
 //
