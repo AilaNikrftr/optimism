@@ -2,6 +2,7 @@ package Log
 
 import (
     "testing"
+	"fmt"
 )
 
 func TestLog(t *testing.T) {
